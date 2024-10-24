@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student's Registration form</title>
+</head>
+<body>
+  <h1>Registration </h1>
+    <form>
+      <p>First name</p>
+      <p> <input id="first name" type="text" name="firstname" required autofocus></p>
+      <p>Last name</p>
+      <p> <input id="Last name" type="text" name="lastname" required autofocus></p>
+      <p>Student ID</p>
+      <p> G<input id="student id" type="text" name="student id" required autofocus></p>
+      <p>Email address</p>
+      <p> <input id="email address" type="email" name="email address" title="example@uclan.ac.uk" required autofocus></p>
+
+
+      <p> <b>Register to modules</b> </p>
+      <p> <input id="CO1111" type="checkbox" name="checkbox" required> C01111 - The Computing Challenges </p>
+      <p> <input id="C01301" type="checkbox" name="checkbox" required> C01301 - Games Concept </p>
+      <p> <input id="CO1507" type="checkbox" name="checkbox" required> 1507 - Introduction to Networking </p>
+      <p> <input id="CO1605" type="checkbox" name="checkbox" required> CO1605 - Systems Analysis and Database Design </p>
+      <p> <input id="CO1508" type="checkbox" name="checkbox" required> CO1508 - Computer Systems and Security</p>
+      <p> <input id="CO1706" type="checkbox" name="checkbox" required> CO1706 - Interactive Application </p>
+
+      <p> <b>Preferred Pathway</b> </p>
+      <input id="Software Engineering"type="radio" name="radiobutton" required> Software Engineering
+      <input id="Games Development" type="radio" name="radiobutton" required> Games Development
+      <input id="Networking" type="radio" name="radiobutton" required> Networking
+      <input id="Not Sure yet" type="radio" name="radiobutton" required> Not sure yet
+      <p></p>
+
+      <p> <b>Gender</b> </p>
+      <input list="genders" placeholder="Pick one" required>
+      <datalist id="genders">
+        <option value="Male">
+        <option value="Female">
+        <option value="other">
+      </datalist>
+
+      <p><b>Press 'submit' to submit your form or 'rest' to reset it</b></p>
+      <input type="submit" value="Submit">
+      <input type="submit" value="Reset">
+
+      <script>
+        let emailTextbox = document.getElementById("email address");
+        let email= emailTextbox.value;
+       emailTextbox.value = "@uclan.ac.uk"
+      </script>
+    </form>
+
+
+</body>
+</html>
